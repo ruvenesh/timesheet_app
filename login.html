@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timesheet Login</title>
+    <!-- Link to our shared styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Google Fonts for a nicer font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="login-page-body">
+
+    <div class="login-card">
+        <div class="login-header">
+            <!-- Feather Icon for a simple logo -->
+            <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <h2>Welcome Back</h2>
+            <p>Please sign in to continue</p>
+        </div>
+
+        <form id="login-form" class="login-form">
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input id="email" type="email" name="email" placeholder="you@company.com" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="login-button">Sign In</button>
+        </form>
+    </div>
+
+    <!-- Supabase and App Scripts (at the end of body) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script defer src="app.js"></script>
+</body>
+</html>
